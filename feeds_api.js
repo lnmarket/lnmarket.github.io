@@ -55,7 +55,7 @@ function fetch_listings() {
   var u = 'https://nostr.realsearch.cc/nostr?method=search&q='+encodeURIComponent(search_terms)+'%20-filter%3Aspam&p='+CURRENT_PAGE;
   var t = Math.floor(Date.now() / 1000);
   var url_api = 'https://allorigins.bitejo.com/raw?url='+encodeURIComponent(u)+'&t='+t;
-  var url = new URL(url_api);
+  var url = new URL(u);
   var listings = [];
   fetch(url).then((res) => {
     res.text().then((res_text) => {
