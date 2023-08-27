@@ -1,4 +1,4 @@
-var CURRENT_PAGE = 1;
+var CURRENT_PAGE = 0;
 var MAX_PAGES = 1;  
 
 function display_listings(items) {
